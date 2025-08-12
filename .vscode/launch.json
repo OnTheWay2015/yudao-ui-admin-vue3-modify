@@ -1,16 +1,27 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "msedge",
-      "request": "launch",
-      "name": "Launch Edge against localhost",
-      "url": "http://localhost",
-      "webRoot": "${workspaceFolder}/src",
-      "sourceMaps": true
-    }
-  ]
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+{
+
+    "name": "xxx", // 配置对象的名称，你可以选择其中一个配置运行调试
+    
+    "type": "chrome",
+
+    "request": "launch",
+    "url":"http://localhost:8082/yudao-ui/index.html",
+ 
+     // 是否启动后自动停止程序
+    "stopOnEntry": false,
+
+    // 生成的代码中，如果无法映射回源代码，就自动单步执行
+    "smartStep":false 
+
+},
+
+
+
+    ]
 }

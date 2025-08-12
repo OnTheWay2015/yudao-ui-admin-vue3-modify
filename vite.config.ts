@@ -63,9 +63,11 @@ export default ({command, mode}: ConfigEnv): UserConfig => {
             ]
         },
         build: {
-            minify: 'terser',
+            target: 'esnext',
+            minify: false,
             outDir: env.VITE_OUT_DIR || 'dist',
-            sourcemap: env.VITE_SOURCEMAP === 'true' ? 'inline' : false,
+            //sourcemap: env.VITE_SOURCEMAP === 'true' ? 'inline' : false,
+            sourcemap: true,
             // brotliSize: false,
             terserOptions: {
                 compress: {
