@@ -58,6 +58,11 @@ const whiteList = [
 
 // 路由加载前
 router.beforeEach(async (to, from, next) => {
+  console.log('router from:')
+  console.log(from)
+  console.log('router to:')
+  console.log(to)
+
   start()
   loadStart()
   if (getAccessToken()) {

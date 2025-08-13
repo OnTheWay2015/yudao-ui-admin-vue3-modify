@@ -6,6 +6,9 @@ const { default_headers } = config
 
 const request = (option: any) => {
   const { headersType, headers, ...otherOption } = option
+
+  console.log(' request ====>')
+  console.log(option)
   return service({
     ...otherOption,
     headers: {
