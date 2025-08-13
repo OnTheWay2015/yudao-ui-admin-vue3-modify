@@ -67,6 +67,8 @@ const setupAll = async () => {
   app.use(VueDOMPurifyHTML)
 
   app.mount('#app')
+
+  router.push('/')
 }
 
 setupAll()
